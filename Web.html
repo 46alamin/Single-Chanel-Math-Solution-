@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Web</Title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+<style>
+
+section{
+    background: #F5F2F0;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+.a_container{
+    background: #d8d3d6;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.s_container{
+    background: #d8d3d6;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.tba_container{
+    background: #d8d3d6;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.st_container{
+    background: #d8d3d6;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.final_container{
+    background: #d8d3d6;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+button{
+    background: darkcyan !important;
+}
+.title{
+    text-align: center;
+}
+
+.step_title{
+    
+    text-align: center;
+    height: 50px;
+    width: 160px;
+    background: rgb(223, 256, 206) !important;
+
+}
+.step_title h2{
+    padding-top: 15px;
+    padding: 5px;
+    color: darkcyan;
+}
+.a_num_of_row{
+    height: 35px;
+    width: 70px;
+}
+
+.manual_container{
+    margin: 1rem;
+}
+.manual_div{
+    margin-top: 15px;
+}
+
+.sol1{
+    margin-top: 2rem;;
+}
+.table_design{
+    height: 400px;
+    overflow-y: scroll;
+}
+tr, td{
+    height: 50px;
+}
+
+.s_num_of_row{
+    height: 35px;
+    width: 70px;
+}
+.sol2{
+    margin-top: 2rem;;
+}
+.tba_num_of_row{
+    height: 35px;
+    width: 70px;
+}
+.st_num_of_row{
+    height: 35px;
+    width: 70px;
+}
+
+</style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h2 class="title">Single chanel Math Solution</h2>
+        </div>
+ <!--------------------------- arrival time Distrubition start-------------------- -->
+
+        <div class="container a_container">
+            <div class=" step_title">
+                <h2>STEP : 1.1</h2>
+            </div>
+            
+            <div class="row sol1">
+                <div class="col-sm-4">
+                    <h3>Arrival Time : <input type="text" class="a_num_of_row" name="num_of_row"></h3>
+
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" id="a_fixed" checked>Fixed value</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optradio" class="arr_manual">Manual value</label>
+                      </div>
+
+                      <div class="container manual_container d-none">
+                          <div class="row">
+                              <div class="col-sm-3 manual_div">
+                                  <div class="manual_value">
+                                        <input type="text" class="a_num_of_row">
+                                  </div>
+                              </div>
+                              <div class="col-sm-3 manual_div">
+                                    <div class="manual_value">
+                                        <input type="text" class="a_num_of_row" >
+                                    </div>
+                               </div>
+                               <div class="col-sm-3 manual_div">
+                                    <div class="manual_value">
+                                        <input type="text" class="a_num_of_row">
+                                    </div>
+                               </div>
+                               <div class="col-sm-3 manual_div">
+                                    <div class="manual_value">
+                                        <input type="text" class="a_num_of_row">
+                                    </div>
+                               </div>
+                               <div class="col-sm-3 manual_div">
+                                    <div class="manual_value">
+                                        <input type="text" class="a_num_of_row">
+                                    </div>
+                               </div>
+                          </div>
+                      </div>
+
+
+
+                    <button type="button" class="btn btn-secondary a_generate_btn" >Generate Table</button>
+                </div>
+                <div class="col-sm-8">
+                    <h3>Arrival Time Distrubition table : </h3><br>
+                    <div class="table_design">
+                        <table class="table table-bordered a_table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Time</th>
+                                <th scope="col">Probability</th>
+                                <th scope="col">Cumulative Probability</th>
+                                <th scope="col">Random Digit Assignment</th>
+                              </tr>
+                            </thead>
+                            <tbody class="a_tbody">
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+<!--------------------------- arrival time Distrubition end-------------------- -->
+
+
+
+
+<!--------------------------- service time Distrubition start-------------------- -->
+
+        <div class="container s_container">
+                <div class=" step_title">
+                    <h2>STEP : 1.2</h2>
+                </div>
+                
+                <div class="row sol2">
+                    <div class="col-sm-4">
+                        <h3>Service Time : <input type="text" class="s_num_of_row" name="num_of_row"></h3>
+    
+                        <div class="radio">
+                            <label><input type="radio" name="optradio1" id="s_fixed" checked>Fixed value</label>
+                          </div>
+                          <div class="radio">
+                            <label><input type="radio" name="optradio1">Manual value</label>
+                          </div>
+    
+                          <div class="container manual_container d-none">
+                              <div class="row">
+                                  <div class="col-sm-3 manual_div">
+                                      <div class="manual_value">
+                                            <input type="text" class="a_num_of_row">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-3 manual_div">
+                                        <div class="manual_value">
+                                            <input type="text" class="a_num_of_row" >
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-3 manual_div">
+                                        <div class="manual_value">
+                                            <input type="text" class="a_num_of_row">
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-3 manual_div">
+                                        <div class="manual_value">
+                                            <input type="text" class="a_num_of_row">
+                                        </div>
+                                   </div>
+                                   <div class="col-sm-3 manual_div">
+                                        <div class="manual_value">
+                                            <input type="text" class="a_num_of_row">
+                                        </div>
+                                   </div>
+                              </div>
+                          </div>
+    
+    
+    
+                        <button type="button" class="btn btn-secondary s_generate_btn" >Generate Table</button>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Service Time Distrubition table : </h3><br>
+                        <div class="table_design">
+                            <table class="table table-bordered s_table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Probability</th>
+                                    <th scope="col">Cumulative Probability</th>
+                                    <th scope="col">Random Digit Assignment</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="s_tbody">
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                       
+                    </div>
+                </div>
+        </div>
+
+<!--------------------------- service time Distrubition end-------------------- -->
+
+
+
+
+<!--------------------------- arrival time determination start-------------------- -->
+
+        <div class="container tba_container">
+            <div class=" step_title">
+                <h2>STEP : 2.1</h2>
+            </div>
+            
+            <div class="row sol2">
+                <div class="col-sm-4">
+                    <h3>Customer Number : <input type="text" class="tba_num_of_row" id="tba_num_of_row" name="num_of_row"></h3>
+
+                    
+                    <button type="button" class="btn btn-secondary tba_generate_btn" >Generate Table</button>
+                </div>
+                <div class="col-sm-8">
+                    <h3>Time Between Arrival Determination : </h3><br>
+                    <div class="table_design">
+                        <table class="table table-bordered tba_table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Customer</th>
+                                <th scope="col">Random Digit</th>
+                                <th scope="col">TBA</th>
+                              </tr>
+                            </thead>
+                            <tbody class="tba_tbody">
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+<!--------------------------- arrival time determination end-------------------- -->
+
+
+<!--------------------------- Service time determination start-------------------- -->
+
+    <div class="container st_container">
+        <div class=" step_title">
+            <h2>STEP : 2.2</h2>
+        </div>
+        
+        <div class="row sol2">
+            <div class="col-sm-4">
+                <h3>Click the Button : </h3>
+
+                <button type="button" class="btn btn-secondary st_generate_btn" >Generate Table</button>
+            </div>
+            <div class="col-sm-8">
+                <h3>Service Time Generated : </h3><br>
+                <div class="table_design">
+                    <table class="table table-bordered st_table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Customer</th>
+                            <th scope="col">Random Digit</th>
+                            <th scope="col">Service Time</th>
+                          </tr>
+                        </thead>
+                        <tbody class="st_tbody">
+                          
+                        </tbody>
+                      </table>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+<!--------------------------- Service time determination end-------------------- -->
+
+
+
+<!--------------------------- Final table start-------------------- -->
+
+<div class="container final_container">
+        <div class=" step_title">
+            <h2>STEP : 3</h2>
+        </div>
+        
+        <div class="row sol2">
+            <div class="col-sm-12 text-center">
+                <h3>Click the Button to see the Final Result :</h3>
+
+                <button type="button" class="btn btn-secondary final_generate_btn" >Final Result</button>
+            </div>
+        </div>
+        <div class="row sol2">
+            <div class="col-sm-12">
+                <div class="table_design">
+                    <table class="table table-bordered final_table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Customer</th>
+                            <th scope="col">TBA</th>
+                            <th scope="col">Arrival Time</th>
+                            <th scope="col">Service Time</th>
+                            <th scope="col">Service Time Begin</th>
+                            <th scope="col">Customer Wait Time</th>
+                            <th scope="col">Service Time End</th>
+                            <th scope="col">Spend Time in System</th>
+                            <th scope="col">Idle Time of Server</th>
+                          </tr>
+                        </thead>
+                        <tbody class="final_tbody">
+                          
+                        </tbody>
+                      </table>
+                </div>
+               
+            </div>
+        </div>
+</div>
+
+<!--------------------------- Final table end-------------------- -->
+
+
+
+    </section>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script>
+
+//arrival table start
+    var arrivalTimeTable =[];
+    function arrivalTime(){
+        var ArrivalTimeNumber;
+        var ArrivalProbability;
+        var ArrivalCuprobability;
+        var aRangeMin;
+        var aRangeMax;
+    }
+
+    
+
+    $(".a_generate_btn").click(function(){
+   
+        
+        var input_arrivalTime = $(".a_num_of_row").val();
+
+        var arrival_probability = 1/input_arrivalTime;
+
+        var arrival_cuprobability = 0;
+         
+        var a_range_min = 001;
+        var a_range_max;
+        
+        for(i=1; i<= input_arrivalTime ; i++){
+
+            a = arrival_cuprobability+arrival_probability;
+            arrival_cuprobability= parseFloat(Number(a).toFixed(1));
+
+            var radixPos = String(arrival_cuprobability).indexOf('.')+1;
+            var value = String(arrival_cuprobability).slice(radixPos);
+
+            if( i == input_arrivalTime ){
+                a_range_max = 100;
+            }
+            else{
+                a_range_max = value*10;
+            }
+            
+
+
+            if ($(".a_table tbody").length == 1 && document.getElementById('a_fixed').checked) {
+               $(".a_table tbody").append(
+                "<tr>" +
+                    "<th>"+i+"</th>" +
+                    "<td>"+arrival_probability+"</td>" +
+                    "<td>"+ arrival_cuprobability +"</td>" +
+                    "<td>"+a_range_min+ "-" +a_range_max +"</td>" +
+                "</tr>");
+
+                var at = new arrivalTime();
+                    at.ArrivalTimeNumber = i;
+                    at.ArrivalProbability = arrival_probability;
+                    at.ArrivalCuprobability =arrival_cuprobability;
+                    at.aRangeMin = a_range_min;
+                    at.aRangeMax =a_range_max;
+                    arrivalTimeTable.push(at);    
+
+                a_range_min = a_range_max+1;
+
+                    
+            }
+            
+        }
+    });
+//arrival table end
+
+
+
+//service table start
+
+var serviceTimeTable =[];
+function serviceTime(){
+        var ServiceTimeNumber;
+        var ServiceProbability;
+        var ServiceCuprobability;
+        var sRangeMin;
+        var sRangeMax;
+    }
+
+    $(".s_generate_btn").click(function(){
+   
+        
+   var input_serviceTime = $(".s_num_of_row").val();
+
+   var service_probability = 1/input_serviceTime;
+
+   var service_cuprobability = 0;
+    
+   var s_range_min = 001;
+   var s_range_max;
+   
+   for(i=1; i<= input_serviceTime ; i++){
+
+       a = service_cuprobability+service_probability;
+       service_cuprobability= parseFloat(Number(a).toFixed(1));
+
+       var radixPos = String(service_cuprobability).indexOf('.')+1;
+       var value = String(service_cuprobability).slice(radixPos);
+
+       if( i == input_serviceTime ){
+           s_range_max = 100;
+       }
+       else{
+           s_range_max = value*10;
+       }
+       
+
+
+       if ($(".s_table tbody").length == 1 && document.getElementById('s_fixed').checked) {
+          $(".s_table tbody").append(
+           "<tr>" +
+               "<th>"+i+"</th>" +
+               "<td>"+service_probability+"</td>" +
+               "<td>"+ service_cuprobability +"</td>" +
+               "<td>"+s_range_min+ "-" +s_range_max +"</td>" +
+           "</tr>");
+
+
+           var st = new serviceTime();
+                    st.ServiceTimeNumber = i;
+                    st.ServiceProbability = service_probability;
+                    st.ServiceCuprobability =service_cuprobability;
+                    st.sRangeMin = s_range_min;
+                    st.sRangeMax = s_range_max;
+                    serviceTimeTable.push(st); 
+
+
+           s_range_min = s_range_max+1;
+
+
+       }
+       
+   }
+});
+//service table end
+
+//TBA table start
+$(".tba_generate_btn").click(function(){
+   
+        
+   var input_customer = $(".tba_num_of_row").val();
+
+   
+   for(i=1; i<= input_customer ; i++){
+
+       var a_randomDigit = prompt("Please Enter Random digit");;
+
+       arrivalTimeTable.forEach(function (e) {
+        
+        
+        if( a_randomDigit >= e.aRangeMin && a_randomDigit<= e.aRangeMax){
+            var tba = e.ArrivalTimeNumber;
+
+            if ($(".tba_table tbody").length == 1) {
+            $(".tba_table tbody").append(
+            "<tr>" +
+                "<th>"+i+"</th>" +
+                "<td>"+ a_randomDigit+"</td>" +
+                "<td>"+ tba +"</td>" +
+            "</tr>");
+
+
+            var ft = new finaltable();
+                    ft.customer = i;
+                    ft.randomDigit = a_randomDigit;
+                    ft.Ftba =tba;
+                    finalTable.push(ft); 
+
+          }
+        }
+        
+    });
+
+      
+       
+   }
+});
+//TBA table end
+
+
+//Service Time table start
+$(".st_generate_btn").click(function(){
+   
+        
+   var input_customer = document.getElementById("tba_num_of_row").value;
+
+   
+   for(i=1; i<= input_customer ; i++){
+
+       var s_randomDigit = prompt("Please Enter Random digit");;
+
+       serviceTimeTable.forEach(function (e) {
+        
+        
+        if( s_randomDigit >= e.sRangeMin && s_randomDigit <= e.sRangeMax){
+            var service_time = e.ServiceTimeNumber;
+
+            if ($(".st_table tbody").length == 1) {
+            $(".st_table tbody").append(
+            "<tr>" +
+                "<th>"+i+"</th>" +
+                "<td>"+ s_randomDigit+"</td>" +
+                "<td>"+ service_time +"</td>" +
+            "</tr>");
+
+            var ft_s = new finaltable_s();
+                    ft_s.customer_s = i;
+                    ft_s.randomDigit_s = s_randomDigit;
+                    ft_s.St =service_time;
+                    finalTable_s.push(ft_s); 
+
+          }
+        }
+        
+    });
+
+      
+       
+   }
+});
+//Service Time table end
+
+//Final table start
+
+var finalTable =[];
+function finaltable(){
+        var customer;
+        var randomDigit;
+        var Ftba;
+    }
+
+    var finalTable_s =[];
+function finaltable_s(){
+        var customer_s;
+        var randomDigit_s;
+        var St;
+    }
+
+
+$(".final_generate_btn").click(function(){
+
+    
+   debugger;
+   var fcustomer = document.getElementById("tba_num_of_row").value;
+    
+   var arrtime = 0;
+   var endservice = 0;
+   var idletime = 0;
+
+   for(i=1; i<= fcustomer ; i++){
+
+     
+
+    finalTable.forEach(function (e) {
+        finalTable_s.forEach(function (f) {
+         if(i == e.customer && i == f.customer_s){
+
+            
+
+            if ($(".final_table tbody").length == 1) {
+debugger;
+           var tba = e.Ftba;
+           
+           var st_start;
+           arrtime = arrtime + tba;
+
+           if(endservice >= arrtime ){
+            st_start = endservice;
+           }
+           else{
+            st_start = arrtime;
+           }
+
+           idletime = st_start - endservice;
+debugger;
+           var st = f.St;
+
+           endservice = st_start + st;
+           var waitservice = st_start - arrtime;
+           
+           var spendtime = waitservice + st;
+debugger;
+        $(".final_table tbody").append(
+        "<tr>" +
+            "<th>"+ i +"</th>" +
+            "<td>"+ tba +"</td>" +
+            "<td>"+ arrtime +"</td>" +
+            "<td>"+ st +"</td>" +
+            "<td>"+ st_start +"</td>" +
+            "<td>"+ waitservice +"</td>" +
+            "<td>"+ endservice +"</td>" +
+            "<td>"+ spendtime +"</td>" +
+            "<td>"+ idletime +"</td>" +
+        "</tr>");
+        
+        
+         }
+        
+       
+         }
+
+        });
+
+        });
+       } 
+     
+    
+});
+//final table end
+
+</script>
+ 
+</body>
+
+</html>
